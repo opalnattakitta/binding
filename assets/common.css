@@ -1,0 +1,11 @@
+
+:root {
+	--base-size: 20px;
+}
+
+body {
+	padding: var(--base-size);
+	font-size: var(--base-size)
+}
+
+* {margin-top: 1em;}
