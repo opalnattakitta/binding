@@ -19,6 +19,16 @@ section{
 
 }
 
+div{
+	display: none;
+}
+
+ul{
+	display:flex;
+	height: 20px;
+	justify-content: space-between;
+}
+
 section:nth-child(2) { 
 	top: 30px;
 	background-color:#9264ff;
@@ -45,7 +55,7 @@ header{
 
 body {
 	font-family: "League Spartan", sans-serif;
-	background-color:white;
+	background: linear-gradient(#ffd3a4, #98aab1);
 	padding: var(--base-size);
 	font-size: var(--base-size)
 }
