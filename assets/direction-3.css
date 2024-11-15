@@ -1,6 +1,7 @@
 
 .modern-style{
 	font-family: "Bodoni Moda", serif;
+	color: rgb(236, 67, 37);
 }
 
 .first-paragraph{
@@ -27,6 +28,8 @@ li:nth-child(6){
 	padding-left: 10px;
 	background-color: white;
 }
+
+ol:nth-child() { justify-content: start; }
 
 ol{
 	font-size: 2.5rem;
