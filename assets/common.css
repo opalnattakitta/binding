@@ -1,6 +1,6 @@
 
 :root {
-	--base-size: 20px;
+	--base-size: 18px;
 }
 
 body {
@@ -8,4 +8,4 @@ body {
 	font-size: var(--base-size)
 }
 
-* {margin-top: 1em;}
+* {margin-top: 0.5em;}
