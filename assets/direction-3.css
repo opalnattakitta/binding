@@ -1,7 +1,66 @@
+
+.modern-style{
+	font-family: "Bodoni Moda", serif;
+}
+
+.first-paragraph{
+	font-size: 1.2rem;
+	margin-bottom: 160px;
+}
+
+li:nth-child(2){
+	padding-left: 10px;
+	background-color: white;
+}
+
+li:nth-child(4){
+	padding-left: 10px;
+	background-color: white;
+}
+
+
+li:nth-child(6){
+	padding-left: 10px;
+	background-color: white;
+}
+
+ol{
+	font-size: 2.5rem;
+	font-weight: 500;
+	display: flex;
+	justify-content: space-between;
+}
+
+blockquote{
+	display: none;
+}
+
+div{
+	display:none;
+}
+
+ul{
+	display:flex;
+	height: 20px;
+	justify-content: space-between;
+}
+
+h2{
+	font-size: 2rem;
+}
+
+h1{
+	font-size: 2.6rem;
+	line-height: 1.2em;
+	margin-bottom: 120px;
+}
+
 p{
-	color:gold;
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	max-width: 700px;
 }
 
 body {
-	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: "Poppins", sans-serif;
 }

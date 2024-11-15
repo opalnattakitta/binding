@@ -4,7 +4,7 @@
 }
 
 body {
-	/* padding: var(--base-size); */
+	padding: var(--base-size);
 	font-size: var(--base-size)
 }
 
