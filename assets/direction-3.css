@@ -5,8 +5,18 @@
 }
 
 .first-paragraph{
-	font-size: 1.2rem;
+	font-family: "Bodoni Moda", serif;
+	font-weight: 300;
+	font-size: 1.3rem;
 	margin-bottom: 160px;
+}
+
+.brown{
+	color: rgb(227, 134, 21);
+}
+
+.em{
+	font-weight: 500;
 }
 
 section:nth-child{
@@ -23,10 +33,13 @@ li:nth-child(4){
 	background-color: white;
 }
 
-
 li:nth-child(6){
 	padding-left: 10px;
 	background-color: white;
+}
+
+ol li:nth-child(1) {
+	color: rgb(236, 67, 37);
 }
 
 ol:nth-child() { justify-content: start; }
