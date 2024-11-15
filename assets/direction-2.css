@@ -11,6 +11,7 @@
 .title-change {
 	display: inline-block;
 	animation: flicker 2s infinite;
+	line-height: 1.5rem;
 }
 
 @keyframes flicker{
@@ -37,6 +38,10 @@
 	100% {
 		font-family: "Poppins", serif;
 	}
+}
+
+.title-move{
+
 }
 
 .highlight-black{
@@ -275,5 +280,23 @@ p{
 		font-size: 2rem;
 		padding: 70px;
 		margin: 50px;
+	}
+}
+
+@media (max-width:700px) {
+	.title-move1 {
+		animation: moveWord 2s forwards;
+	}
+	@keyframes moveWord { 
+		0% {
+			/* position: relative; */
+			transform: translate (0vw, 0vh);
+			/* transform means change */
+		}
+
+		100% {
+			/* position: relative; */
+			transform: translate (20vw, 70vh);
+		}
 	}
 }
