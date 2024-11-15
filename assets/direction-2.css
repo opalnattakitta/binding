@@ -146,6 +146,11 @@ p{
 	p{
 		font-size: 1rem;
 	}
+
+	section{
+		margin-right: 20px;
+		margin-left: 20px;
+	}
 }
 
 @media (min-width: 700px) {
@@ -161,22 +166,18 @@ p{
 	.first-paragraph{
 		font-size: 1.1rem;
 	}
-}
 
-@media (min-width: 700px) {
-	h1{
-		font-size: 4rem;
-		line-height: 1em;
+	section{
+		margin-right: 30px;
+		margin-left: 30px;
 	}
 
-	p{
-		font-size: 1.1rem;
-	}
-
-	.first-paragraph{
-		font-size: 1.2rem;
+	blockquote{
+		font-size: 1.5rem;
+		padding: 50px;
 	}
 }
+
 
 @media (min-width: 1000px) {
 	h1{
@@ -192,6 +193,11 @@ p{
 	.first-paragraph{
 		font-size: 1.5rem;
 		line-height: 1.5em;
+		padding: 30px;
+	}
+
+	div{
+		padding: 30px;
 	}
 
 	section{
@@ -204,7 +210,8 @@ p{
 	}
 
 	blockquote{
-		font-size: 2.3rem;
+		font-size: 2rem;
 		padding: 70px;
+		margin: 50px;
 	}
 }
