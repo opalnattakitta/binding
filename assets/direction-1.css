@@ -23,6 +23,7 @@ section{
 	filter: drop-shadow(4px 4px rgb(53, 53, 53));
 	padding: 25px;
 	padding-bottom: 50px;
+	margin-bottom: 30px;
 	max-width: 600px;
 
 }
@@ -95,6 +96,6 @@ h1,h2,h3{
 	font-family: "Lexend", sans-serif;
 }
 
-@media (min-width: 500px) {
-
+@media (min-width: 650px) {
+	
 }
