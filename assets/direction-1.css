@@ -1,4 +1,9 @@
+:root {
+	--base-size: 18px;
+}
+
 p{
+	font-family: "League Spartan", sans-serif;
 	font-weight: 300;
 	line-height: 20px;
 	color: black;
@@ -41,6 +46,8 @@ header{
 body {
 	font-family: "League Spartan", sans-serif;
 	background-color:white;
+	padding: var(--base-size);
+	font-size: var(--base-size)
 }
 
 h2{
