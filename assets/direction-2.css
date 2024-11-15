@@ -57,11 +57,11 @@
 
 @keyframes spin {
 	from {
-		transform: rotate(0deg);
+		transform: rotate(0 deg);
 	}
 
 	to {
-		transform: rotate(360deg);
+		transform: rotate(360 deg);
 	}
 }
 
@@ -71,7 +71,7 @@
 	}
 
 	to {
-		transform: rotate(360deg);
+		transform: rotate(360 deg);
 	}
 }
 
@@ -283,11 +283,11 @@ p{
 	}
 }
 
-.title-move1{
+/* .title-move1{ */
 	transition: all 0.5s ease;
 }
 
-@media (max-width:700px) {
+/* @media (max-width:700px) { */
 	.title-move1 {
 		animation: moveWord 2s forwards;
 	}
