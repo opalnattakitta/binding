@@ -11,7 +11,7 @@
 .title-change {
 	display: inline-block;
 	animation: flicker 2s infinite;
-	line-height: 1.5rem;
+	line-height: 1rem;
 }
 
 @keyframes flicker{
@@ -99,12 +99,12 @@
 }
 
 .first-paragraph{
-	font-size: 1.1rem;
+	font-size: 1.3rem;
 }
 
 /* div{
 	display: flex;
-} */
+}  */
 
 hgroup {
 	color: white;
@@ -114,6 +114,10 @@ hgroup {
 ul{
 	display:flex;
 	height: 20px;
+	justify-content: space-between;
+}
+
+ol{
 	justify-content: space-between;
 }
 
@@ -289,9 +293,9 @@ p{
 	}
 }
 
-.title-move1{
+/* .title-move1{
 	transition: all 0.5s ease;
-}
+} */
 
 /* @media (max-width:700px) {
 	.title-move1 {
@@ -306,11 +310,11 @@ p{
 			/* transform means change */
 		}
 
-		100% {
+		/* 100% {
 			/* position: relative; */
 			position: relative;
 			top: 20%;
 			left: 40%;
-		}
-	} */
-
+		} */
+	}
+} */
