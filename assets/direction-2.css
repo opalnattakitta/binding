@@ -7,18 +7,31 @@
 .star{
 	font-family: "Coda", system-ui;
 	font-size: 5rem;
-	animation: 3s linear 1s infinite running slidein;
 }
 
-body{
-	font-family: "DM Sans", sans-serif;
-	background-color: #D4F131;
+.star:hover {
+	animation-name: rotate;
+	animation-duration: 0.7s;
+	animation-direction: reverse;
 }
 
+.circle{
+	animation: 3s linear 1s infinite running;
+	font-family: "Coda", system-ui;
+	font-size: 5rem;
+}
 
-p{
-	font-family: 'Courier New', Courier, monospace;
-	color: black;
+.hollow-circle{
+	font-size: 5rem;
+	text-align: right;
+}
+
+.first-paragraph{
+	font-size: 1.1rem;
+}
+
+div{
+	display: flex;
 }
 
 hgroup {
@@ -57,7 +70,7 @@ h1 {
 }
 
 header {
-	margin-bottom: 100px;
+	margin-bottom: 80px;
 	padding: 18px;
 }
 
@@ -72,12 +85,110 @@ section:nth-child(2){
 
 
 section:nth-child(3){
-	background-color: black;
-	padding: none;
-	margin: none;
+	top: 150px;
+	padding: 20px;
+	font-size: 1rem;
+	background-color: rgb(211, 216, 186);
+	border: solid 1px black;
+	border-radius: 20px;
+	filter: drop-shadow(4px 4px rgb(53, 53, 53));
+}
+
+section:nth-child(4){
+	top: 230px;
+	padding: 20px;
+	font-size: 1rem;
+	background-color: rgb(211, 216, 186);
+	border: solid 1px black;
+	border-radius: 20px;
+	filter: drop-shadow(4px 4px rgb(53, 53, 53));
+}
+
+/* blockquote {
+	position: sticky;
+	top: 100px;
+} */
+
+footer {
+	text-align: left;
+	font-size: 0.9rem;
+	padding: 5px;
+	color: whitesmoke;
+}
+
+section{
+	position: sticky;
+	top:50px;
 }
 
 article{
 	background-color: black;
 	padding: 18px;
+}
+
+body{
+	font-family: "DM Sans", sans-serif;
+	background-color: #D4F131;
+}
+
+p{
+	font-family: 'Courier New', Courier, monospace;
+	color: black;
+	line-height: 1.2rem;
+}
+
+@media (min-width: 500px) {
+	h1{
+		font-size: 3.5rem;
+		line-height: 1em;
+	}
+
+	p{
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 700px) {
+	h1{
+		font-size: 4rem;
+		line-height: 1em;
+	}
+
+	p{
+		font-size: 1rem;
+	}
+
+	.first-paragraph{
+		font-size: 1.1rem;
+	}
+}
+
+@media (min-width: 700px) {
+	h1{
+		font-size: 4rem;
+		line-height: 1em;
+	}
+
+	p{
+		font-size: 1.1rem;
+	}
+
+	.first-paragraph{
+		font-size: 1.2rem;
+	}
+}
+
+@media (min-width: 1000px) {
+	h1{
+		font-size: 5rem;
+		line-height: 1em;
+	}
+
+	p{
+		font-size: 1.1rem;
+	}
+
+	.first-paragraph{
+		font-size: 1.2rem;
+	}
 }
