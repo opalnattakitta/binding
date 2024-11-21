@@ -1,0 +1,101 @@
+:root {
+	--base-size: 18px;
+}
+
+blockquote {
+	padding: 50px;
+	font-weight: 400;
+	line-height: 1.2rem;
+}
+
+p{
+	font-family: "League Spartan", sans-serif;
+	font-weight: 300;
+	line-height: 20px;
+	color: black;
+}
+
+section{
+	position: sticky;
+	top:70px;
+	border: solid 1px black;
+	border-radius: 10px;
+	filter: drop-shadow(4px 4px rgb(53, 53, 53));
+	padding: 25px;
+	padding-bottom: 50px;
+	margin-bottom: 30px;
+	max-width: 600px;
+
+}
+
+div{
+	display: none;
+}
+
+ul{
+	display:flex;
+	height: 20px;
+	justify-content: space-between;
+}
+
+ol{
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+section:nth-child(2) { 
+	top: 30px;
+	background-color:#d7c6ff;
+}
+
+section:nth-child(3) { 
+	top: 90px;
+	background-color:#aec8ff;
+}
+
+section:nth-child(4) { 
+	top: 120px;
+	background-color:#bdffc4;
+}
+
+
+header{
+	background-color: #faff64;
+	border: solid 1px black;
+	border-radius: 10px;
+	filter: drop-shadow(4px 4px rgb(53, 53, 53));
+	padding: 20px;
+	padding-bottom: 50px;
+}
+
+body {
+	font-family: "League Spartan", sans-serif;
+	background: linear-gradient(#ffd3a4, #ffffff);
+	padding: var(--base-size);
+	font-size: var(--base-size)
+}
+
+h2{
+	font-size: 30px;
+}
+
+h1:nth-child(3){
+	display: none;
+}
+
+h1{
+	font-size: 32px;
+	border-top: solid 1px black;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+h1,h2,h3{
+	font-family: "Lexend", sans-serif;
+}
+
+@media (min-width: 650px) {
+	
+}
