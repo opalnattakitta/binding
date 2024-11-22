@@ -1,6 +1,11 @@
 :root {
-	--base-size: 18px;
+	--base-size: 1.2rem;
 }
+
+/* #home-button:hover{
+	color: white;
+	background-color: black;
+} */
 
 .description{
 	display:none;
@@ -78,7 +83,7 @@
 	left: 100%;
 	display:flex;
 	justify-content:space-between;
-	height:40px;
+	/* height:40px; */
 	font-family: 'Courier New', Courier, monospace;
 }
 
@@ -96,6 +101,7 @@
 	font-size: 16px;
 }
 
+
 .first-paragraph{
 	font-size: 1.25rem;
 	padding: 20px;
@@ -103,7 +109,7 @@
 }
 
 .author-block{
-	background-color: #ff7eb4;
+	background-color: #faff64;
 	border: solid black 1px;
 	filter: drop-shadow(4px 4px rgb(53, 53, 53));
 	padding: 10px;
@@ -119,7 +125,24 @@ section p{
 }
 
 hgroup{
-	background-color: #faff64;
+	background-color: #7CD6F1;  #faff64
+}
+
+/* 
+.nav-bar a:hover{
+	border: solid black 1px;
+	border-radius: 10px;
+	padding: 2px 10px;
+	background-color: black;
+	color:white;
+} */
+
+ul li:nth-child(1):hover{
+	border: solid black 1px;
+	border-radius: 10px;
+	padding: 2px 10px;
+	background-color: black;
+	color:white;
 }
 
 ul li:nth-child(1){
@@ -157,6 +180,22 @@ section{
 
 }
 
+article {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 3fr;
+}
+
+aside {
+	position:sticky
+	border: solid 1px black;
+	filter: drop-shadow(4px 4px rgb(53, 53, 53));
+	background-color: white;
+}
+
+aside h3 {
+	border-bottom: solid 1 px black;
+}
 /* div{
 	display: none;
 } */
@@ -173,7 +212,7 @@ ol{
 	display: flex;
 	justify-content: space-between;
 	font-size: 1.5rem;
-	margin-bottom: 1.5rem;
+	margin-bottom: 20;
 	text-align: right;
 }
 
@@ -191,6 +230,7 @@ section:nth-child(4) {
 	top: 120px;
 	background-color:#bdffc4;
 }
+
 
 /* header{
 	background-color: #faff64;
@@ -229,19 +269,27 @@ main{
 	padding: var(--base-size);
 }
 
+
+
 @media (min-width: 500px) {
 	h1{
-		font-size: 3.5rem;
+		font-size: 4rem;
 		line-height: 1em;
 	}
 
 	p{
-		font-size: 1rem;
+		font-size: 1.2rem;
 	}
 
 	section{
 		margin-right: 20px;
 		margin-left: 20px;
+	}
+
+	blockquote{
+		font-size: 1.3rem;
+		line-height: 1.5rem;
+		padding: 30px;
 	}
 }
 
@@ -256,7 +304,7 @@ main{
 	}
 
 	.first-paragraph{
-		font-size: 1.1rem;
+		font-size: 1.3rem;
 	}
 
 	section{
@@ -268,32 +316,42 @@ main{
 		font-size: 1.5rem;
 		padding: 50px;
 	}
+
+	article{
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+	}
+
 }
 
 
-@media (min-width: 1000px) {
-
-	.description{
-		background-color:blue;
-		height:400px;
-		width:400px;
-		display:block;
-		position:sticky;
-		top:20px;
-		margin-left:auto;
-	}
+@media (min-width: 1024px) {
+	
 	h1{
-		font-size: 5.7rem;
+		font-size: 6rem;
 		line-height: 1em;
 		padding-left: 30px;
 	}
 
 	p{
-		font-size: 1.1rem;
+		font-size: 1.3rem;
+	}
+
+	ol{
+		font-size: 1.7rem;
+	}
+
+	.decoding-head{
+		font-size: 2rem;
+		padding: 40px;
+	}
+
+	.nav-bar{
+		font-size: 1.3rem;
 	}
 
 	.first-paragraph{
-		font-size: 1.5rem;
+		font-size: 2rem;
 		line-height: 1.5em;
 		padding: 30px;
 	}
@@ -305,6 +363,7 @@ main{
 	section{
 		margin-right: 50px;
 		margin-left: 50px;
+		max-width: 700px;
 	}
 
 	nav{
@@ -312,8 +371,16 @@ main{
 	}
 
 	blockquote{
-		font-size: 2rem;
-		padding: 70px;
-		margin: 50px;
+		font-size: 1.5rem;
+		line-height: 2rem;
+		padding: 50px;
+		margin: none;
 	}
+}
+
+@media (min-width: 1280px) {
+	.first-paragraph{
+		font-size: 2.3rem;
+	}
+
 }

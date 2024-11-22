@@ -140,6 +140,9 @@
 .colophon{
 	font-family: 'Courier New', Courier, monospace;
 	color: white;
+	font-size: 1rem;
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 section p{
@@ -252,11 +255,12 @@ aside p{
 
 section:nth-child(7){
 	grid-template-columns: 2fr 1fr;
-	grid-template-areas: inherit;
+	grid-template: a a a;
 	background-color: black;
-	position: static;
+	position: sticky;
 	color: white;
 }
+
 
 /* header{
 	background-color: #faff64;
@@ -274,7 +278,8 @@ body {
 }
 
 h2{
-	font-size: 30px;
+	font-size: 1.5rem;
+	margin-bottom: 20px;
 }
 
 h3{
@@ -300,7 +305,7 @@ main{
 	padding: var(--base-size);
 }
 
-@media (max-width: 500px){
+@media (max-width: 700px){
 	aside{
 		display:none;
 	}
@@ -320,7 +325,6 @@ main{
 		margin-right: 20px;
 		margin-left: 20px;
 	}
-
 }
 
 @media (min-width: 700px) {
@@ -340,6 +344,7 @@ main{
 	section{
 		margin-right: 30px;
 		margin-left: 30px;
+		grid-column: 1fr;
 	}
 
 	blockquote{
@@ -355,15 +360,6 @@ main{
 
 @media (min-width: 1000px) {
 
-	.description{
-		background-color:blue;
-		height:400px;
-		width:400px;
-		display:block;
-		position:sticky;
-		top:20px;
-		margin-left:auto;
-	}
 	h1{
 		font-size: 5.7rem;
 		line-height: 1em;
