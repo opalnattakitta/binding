@@ -74,7 +74,7 @@
 	left: 100%;
 	display:flex;
 	justify-content:space-between;
-	height:40px;
+	/* height:40px; */
 }
 
 @keyframes marquee{
@@ -97,7 +97,7 @@
 }
 
 .author-block{
-	background-color: #ff7eb4;
+	background-color: #7CD6F1;
 	border: solid black 1px;
 	filter: drop-shadow(4px 4px rgb(53, 53, 53));
 	padding: 10px;
@@ -108,7 +108,7 @@
 }
 
 hgroup{
-	background-color: #faff64;
+	background-color: #F1B47D;
 }
 
 ul li:nth-child(1){
@@ -143,7 +143,9 @@ section{
 	padding-bottom: 50px;
 	margin-bottom: 30px;
 	margin-top: 10px;
-	max-width: 600px;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
 
 }
 
@@ -260,21 +262,21 @@ main{
 }
 
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
 
-	.description{
-		background-color:blue;
-		height:400px;
-		width:400px;
-		display:block;
-		position:sticky;
-		top:20px;
-		margin-left:auto;
-	}
+	
 	h1{
-		font-size: 5.7rem;
+		font-size: 6rem;
 		line-height: 1em;
 		padding-left: 30px;
+	}
+
+	p{
+		font-size: 1.3rem;
+	}
+
+	ol{
+		font-size: 1.7rem;
 	}
 
 	p{
@@ -283,14 +285,10 @@ main{
 
 	.first-paragraph{
 		font-size: 1.5rem;
-		line-height: 1.5em;
+		line-height: 1.3em;
 		padding: 30px;
 	}
-
-	div{
-		padding: 30px;
-	}
-
+	
 	section{
 		margin-right: 50px;
 		margin-left: 50px;
@@ -302,7 +300,13 @@ main{
 
 	blockquote{
 		font-size: 2rem;
-		padding: 70px;
-		margin: 50px;
+		line-height: 2rem;
 	}
+}
+
+@media (min-width: 1280px) {
+	.first-paragraph{
+		font-size: 2.3rem;
+	}
+
 }
