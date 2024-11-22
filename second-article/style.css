@@ -144,16 +144,12 @@ section{
 	margin-bottom: 30px;
 	margin-top: 10px;
 	max-width: fit-content;
-	line-height: 1.5rem;
 }
 
 section p{
-	margin-bottom: 1.5rem;
+	line-height: 1.5rem;
+	/* margin-bottom: 1.5rem; */
 }
-
-/* div{
-	display: none;
-} */
  
 
 ul{
@@ -301,6 +297,11 @@ main{
 		margin-right: 100px;
 		margin-left: 100px;
 		padding: 30px;
+	}
+
+	section p{
+		margin-bottom: 20px;
+		line-height: 2rem;
 	}
 
 	nav{
