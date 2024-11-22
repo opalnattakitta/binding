@@ -97,8 +97,9 @@
 }
 
 .first-paragraph{
-	font-size: 1.3rem;
+	font-size: 1.25rem;
 	padding: 20px;
+	padding-right: 40px;
 }
 
 .author-block{
@@ -202,7 +203,7 @@ section:nth-child(4) {
 
 body {
 	font-family: "League Spartan", sans-serif;
-	/* background: linear-gradient(#ffd3a4, #ffffff); */
+	background: linear-gradient(#ffffff, #fff5f5);
 	font-size: var(--base-size)
 }
 
