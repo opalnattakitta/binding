@@ -144,6 +144,7 @@ section{
 	margin-bottom: 30px;
 	margin-top: 10px;
 	max-width: fit-content;
+	line-height: 1.5rem;
 }
 
 section p{
@@ -182,6 +183,11 @@ section:nth-child(3) {
 section:nth-child(4) { 
 	top: 120px;
 	background-color:#bdffc4;
+}
+
+section:nth-child(5) { 
+	top: 120px;
+	background-color:#ffbdff;
 }
 
 /* header{
@@ -281,7 +287,8 @@ main{
 	}
 
 	p{
-		font-size: 1.1rem;
+		font-size: 1.2rem;
+		line-height: 1.5rem;
 	}
 
 	.first-paragraph{
@@ -291,8 +298,9 @@ main{
 	}
 	
 	section{
-		margin-right: 50px;
-		margin-left: 50px;
+		margin-right: 100px;
+		margin-left: 100px;
+		padding: 30px;
 	}
 
 	nav{
