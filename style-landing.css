@@ -467,7 +467,7 @@ main{
 	}
 
 	.nav-bar{
-		font-size: 1.3rem;
+		font-size: 1.4rem;
 	}
 
 	.colophon-p{
@@ -503,4 +503,5 @@ main{
 	main{
 		padding: 0;
 	}
+
 }
