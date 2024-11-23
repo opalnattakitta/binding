@@ -2,10 +2,19 @@
 	--base-size: 18px;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 #footer{
 	font-size: 0.9rem;
 	text-align: center;
 	margin-bottom: 15px;
+}
+
+#jumptop{
+	scroll-behavior: smooth;
+	background-color: #fff5f5;
 }
 
 .description{
@@ -31,6 +40,7 @@
 	filter: drop-shadow(4px 4px rgb(53, 53, 53));
 	max-width: fit-content;
 	margin-bottom: 20px;
+	margin-top: 50px;
 }
 
 .title-change:nth-child(1){animation-delay: 0.03s;}
@@ -149,10 +159,6 @@
 .back-top{
 	display: flex;
 	justify-content: space-between;
-}
-
-.readmore{
-	align-content: right;
 }
 
 .container-colophon{
@@ -443,7 +449,7 @@ main{
 	}
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
 	p{
 		font-size: 1.3rem;
 		line-height: 1.7rem;
@@ -498,6 +504,14 @@ main{
 		font-size: 1.8rem;
 		padding-left: 50px;
 		padding-right: 50px;
+	}
+
+	.author-block{
+		margin-right: 60px;
+	}
+
+	.author-block a{
+		font-size: 1.5rem;
 	}
 
 	main{
