@@ -427,10 +427,6 @@ main{
 		padding: 30px;
 	}
 
-	div{
-		padding: 30px;
-	}
-
 	section{
 		margin-right: 50px;
 		margin-left: 50px;
@@ -444,5 +440,67 @@ main{
 		font-size: 2rem;
 		padding: 70px;
 		margin: 50px;
+	}
+}
+
+@media (min-width: 1280px) {
+	p{
+		font-size: 1.3rem;
+		line-height: 1.7rem;
+	}
+	section{
+		max-width: 750px;
+		max-height: fit-content;
+		margin-left: 70px;
+	}
+
+	section p{
+		line-height: 1.7rem;
+	}
+
+	a {
+		font-size: 1.3rem;
+	}
+
+	aside{
+		margin-right: 70px;
+	}
+
+	.nav-bar{
+		font-size: 1.3rem;
+	}
+
+	.colophon-p{
+		margin-left: 70px;
+		margin-right: 70px;
+	}
+
+	h2{
+		margin-left: 70px;
+		margin-top: 30px;
+	}
+
+	h1{
+		padding-left: 50px;
+		padding-top: 50px;
+	}
+
+	#footer p{
+		font-size: 1.1rem;
+		line-height: 1.3rem;
+	}
+
+	.moving-bg-container{
+		padding: 10px;
+	}
+
+	.first-paragraph{
+		font-size: 1.8rem;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	main{
+		padding: 0;
 	}
 }
