@@ -30,6 +30,7 @@
 	border-radius: 10px;
 	filter: drop-shadow(4px 4px rgb(53, 53, 53));
 	max-width: fit-content;
+	margin-bottom: 20px;
 }
 
 .title-change:nth-child(1){animation-delay: 0.03s;}
@@ -173,6 +174,14 @@ hgroup{
 	border-bottom: solid 2px;
 }
 
+ul li:hover{
+	border: solid black 1px;
+	border-radius: 10px;
+	padding: 2px 10px;
+	background-color: black;
+	color:white;
+}
+
 ul li:nth-child(1){
 	border: solid black 1px;
 	border-radius: 10px;
@@ -270,6 +279,7 @@ aside:nth-child(6){
 
 aside{
 	margin-top: 30px;
+	margin-right: 25px;
 	position: sticky;
 	padding: none;
 }
@@ -351,12 +361,17 @@ main{
 		margin-right: 20px;
 		margin-left: 20px;
 	}
+	
 }
 
 @media (min-width: 700px) {
 	h1{
 		font-size: 4rem;
 		line-height: 1em;
+	}
+
+	h2{
+		margin-left: 30px;
 	}
 
 	p{
@@ -382,7 +397,15 @@ main{
 		grid-template-columns: 2fr 1fr;
 	}
 
-
+	.container-colophon{
+		margin-bottom: 70px;
+	}
+	
+	.colophon-p{
+		line-height: 1.5rem;
+		margin-left: 30px;
+		margin-right: 30px;
+	}
 }
 
 
