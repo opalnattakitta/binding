@@ -39,7 +39,7 @@ html{
 	border-radius: 10px;
 	filter: drop-shadow(4px 4px rgb(53, 53, 53));
 	max-width: fit-content;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 	margin-top: 50px;
 }
 
@@ -162,7 +162,7 @@ html{
 }
 
 .container-colophon{
-	margin-bottom: 70px;
+	margin-bottom: 50px;
 }
 
 .colophon-p{
