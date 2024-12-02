@@ -210,18 +210,19 @@ h1:nth-child(3){
 }
 
 h1{
-	font-size: 2.5rem;
+	font-size: 2.4rem;
 	border-top: solid 1px black;
 	padding: 20px;
 }
 
 h1,h2,h3{
-	font-family: "Lexend", sans-serif;
+	/* font-family: "Lexend", sans-serif; */
+	font-family: "Pixelify Sans", sans-serif;
 }
 
-main{
+/* main{
 	padding: var(--base-size);
-}
+} */
 
 @media (min-width: 500px) {
 	h1{

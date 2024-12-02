@@ -248,7 +248,9 @@ ol:nth-child(3){
 	background-color:#bdffc4;
 }
 
-section{}
+section{
+	margin: 25px;
+}
 
 /* section:nth-child(1) { 
 	top: 30px;
@@ -304,9 +306,9 @@ h1,h2,h3{
 	/* font-family: "Comfortaa", sans-serif; */
 }
 
-main{
+/* main{
 	padding: var(--base-size);
-}
+} */
 
 article{
 	margin-bottom: 50px;
