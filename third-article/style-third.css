@@ -9,12 +9,12 @@ html{
 #footer{
 	font-size: 0.9rem;
 	text-align: center;
-	margin-bottom: 15px;
+	margin-top: 50px;
+	margin-bottom: 20px;
 }
 
 
 .back-top{
-	margin:auto;
 	padding: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -24,7 +24,8 @@ html{
 	filter: drop-shadow(4px 4px rgb(53, 53, 53));
 	max-width: fit-content;
 	margin-bottom: 0px;
-	margin-top: 50px;
+	margin-top: 70px;
+	margin-left: 140px;
 }
 
 .description{
@@ -147,8 +148,8 @@ blockquote {
 	padding: 50px;
 	padding-top: ;
 	font-weight: 400;
-	line-height: 1.2rem;
-	font-size: 1.2rem;
+	line-height: 1.5rem;
+	font-size: 1.4rem;
 	background-color: black;
 	color: white;
 	text-align: center;
@@ -165,12 +166,15 @@ section p{
 	line-height: 1.5rem;
 	margin: 10px;
 	margin-bottom: 20px;
+	max-width: 700px;
 }
 
 aside p{
-	line-height: 1.7rem;
+	line-height: 1.9rem;
 	font-size: 1.7rem;
-	margin: 20px;
+	font-style: italic;
+	margin: 30px;
+	color: #ff549b;
 }
 
 /* section{
@@ -270,7 +274,8 @@ ol{
 }
 
 h1{
-	font-size: 2.8rem;
+	font-size: 2.9rem;
+	line-height: 3rem;
 	border-top: solid 1px black;
 	padding: 20px;
 }
@@ -282,6 +287,10 @@ h1,h2,h3{
 
 main{
 	padding: var(--base-size);
+}
+
+article{
+	margin-bottom: 50px;
 }
 
 @media (min-width: 500px) {
