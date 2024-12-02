@@ -15,6 +15,7 @@ html{
 
 
 .back-top{
+	margin: auto;
 	padding: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -23,10 +24,28 @@ html{
 	border-radius: 10px;
 	filter: drop-shadow(4px 4px rgb(53, 53, 53));
 	max-width: fit-content;
-	margin-bottom: 0px;
-	margin-top: 70px;
-	margin-left: 140px;
 }
+
+.container-loop{
+	display: flex;
+	white-space: nowrap;
+	width: 100%;
+	/* height: clamp(3em, 10vw, 6em); */
+	overflow: hidden;
+	margin-top: 15px;
+}
+
+.loop-text{
+	font-size: 1.2rem;
+	animation: loopText 10s infinite linear;
+	margin-left: 25px;
+}
+
+@keyframes loopText{
+	from {transform: translateX(0);}
+	to {transform: translateX(-100%);}
+}
+
 
 .description{
 	display:none;
