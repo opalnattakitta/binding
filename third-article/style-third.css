@@ -18,10 +18,14 @@ html{
 	background-color: #fff5f5;
 }
 
+/* backtop button centered */
+.container-backtop{
+	display: flex;
+	justify-content: center;
+}
+
 .back-top{
-	padding: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding: 5px 10px 5px 10px;
 	background-color:#faff64;
 	border: solid 1px black;
 	border-radius: 10px;
@@ -40,7 +44,7 @@ html{
 
 .loop-text{
 	font-size: 1.2rem;
-	animation: loopText 10s infinite linear;
+	animation: loopText 5s infinite linear;
 	margin-left: 25px;
 }
 
@@ -160,8 +164,22 @@ hgroup{
 	background-color: #64ff76;
 }
 
+ul li:hover{
+	border: solid black 1px;
+	border-radius: 10px;
+	padding: 2px 10px;
+	background-color: black;
+	color:white;
+}
+
 ul li:nth-child(1){
 	border: solid black 1px;
+	border-radius: 10px;
+	padding: 2px 10px;
+}
+
+ul li {
+	border: solid rgb(255, 255, 255) 1px;
 	border-radius: 10px;
 	padding: 2px 10px;
 }
@@ -199,27 +217,9 @@ aside p{
 	color: #ff549b;
 }
 
-/* section{
-	position: sticky;
-	top:70px;
-	border: solid 1px black;
-	border-radius: 10px;
-	filter: drop-shadow(4px 4px rgb(53, 53, 53));
-	padding: 25px;
-	padding-bottom: 50px;
-	margin-bottom: 30px;
-	margin-top: 10px;
-	max-width: 600px; */
-
-}
-
 section{
 
 }
-
-/* div{
-	display: none;
-} */
  
 
 ul{
