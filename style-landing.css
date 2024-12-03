@@ -84,35 +84,23 @@ html{
 	}
 }
 
-.moving-bg-container{
-	height:35px;
-	width:100%;
-	overflow:hidden;
-	position:relative;
-}
-.moving-bg-container .moving-bg-1{
-	font-size: 1rem;
-	font-family: "Victor Mono", monospace;
-	padding-right: 10px;
-	padding-left: 10px;
-	animation: marquee 10s linear 5s infinite;
-}
-.moving-bg-container .moving-bg-2{
-	font-size: 1rem;
-	font-family: "Victor Mono", monospace;
-	padding-right: 10px;
-	padding-left: 10px;
-	animation: marquee 10s linear 10s infinite;
+.container-loop{
+	display: flex;
+	white-space: nowrap;
+	width: 100%;
+	overflow: hidden;
+	margin-top: 15px;
 }
 
-.moving-bg-container div {
-	position:absolute;
-	width:100%;
-	left: 100%;
-	display:flex;
-	justify-content:space-between;
-	height:40px;
-	font-family: 'Courier New', Courier, monospace;
+.loop-text{
+	font-size: 1.2rem;
+	animation: loopText 10s infinite linear;
+	margin-left: 25px;
+}
+
+@keyframes loopText{
+	from {transform: translateX(0);}
+	to {transform: translateX(-100%);}
 }
 
 .landing-page-title{
