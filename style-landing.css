@@ -1,12 +1,13 @@
-:root {
-	--base-size: 18px;
-}
+/* :root {
+	--base-size: 20px;
+} */
 
 html{
 	scroll-behavior: smooth;
 }
 
 #footer{
+	/* font-size: calc(var(--base-size)-0.5rem); */
 	font-size: 0.9rem;
 	text-align: center;
 	margin-bottom: 15px;
@@ -196,8 +197,8 @@ blockquote {
 p{
 	font-family: "League Spartan", sans-serif;
 	font-weight: 300;
-	line-height: 20px;
-	color: black;
+	line-height: var(--base-size);
+	/* font-size: var(--base-size); */
 }
 
 section{
