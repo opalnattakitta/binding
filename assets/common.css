@@ -2,6 +2,7 @@
 
 :root {
 	--base-size: 1.2rem;
+	--base-size-large:1em;
 	--yellow: #faff64;
 	--orange: #F1977C;
 	--pink: #ff7eb4;
@@ -13,7 +14,7 @@
 	--base-size: 18px;
 } */
 
-body {
+p {
 	font-size: var(--base-size);
 }
 

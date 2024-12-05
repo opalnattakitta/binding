@@ -1,6 +1,7 @@
-/* :root {
+:root {
+	font-size:20px;
 	--base-size: 20px;
-} */
+}
 
 html{
 	scroll-behavior: smooth;
@@ -335,8 +336,8 @@ main{
 		line-height: 1em;
 	}
 
-	p{
-		font-size: calc(var(--base-size)*0.9)
+	section p{
+		font-size: var(--base-size-large);
 	}
 
 	section{
