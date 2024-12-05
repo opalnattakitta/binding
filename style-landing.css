@@ -332,7 +332,7 @@ main{
 	}
 
 	p{
-		font-size: 1rem;
+		font-size: calc(var(--base-size)*0.9)
 	}
 
 	section{
