@@ -225,7 +225,7 @@ p{
 
 section p{
 	line-height: 1.5rem;
-	margin: 10px;
+	margin: auto;
 	margin-bottom: 20px;
 	max-width: 700px;
 }
@@ -234,8 +234,8 @@ aside p{
 	line-height: 1.9rem;
 	font-size: 1.7rem;
 	font-style: italic;
-	margin: 35px;
-	color: #ff549b;
+	color: var(--pink);
+	margin: auto;
 }
 
 section{
@@ -254,12 +254,13 @@ ol{
 	display: flex;
 	justify-content: space-between;
 	font-size: 1.5rem;
-	margin-bottom: 1.5rem;
 	border: solid 1px black;
 	border-radius: 10px;
 	filter: drop-shadow(4px 4px rgb(53, 53, 53));
-	/* background-color:#d7c6ff; */
 	padding: 10px;
+	max-width: 900px;
+	margin: auto;
+	margin-bottom: 2em;
 }
 
 ol:nth-child(1){
@@ -350,14 +351,19 @@ article{
 		line-height: 1em;
 	}
 
+	section p{
+		font-size: calc(var(--base-size)+1rem);
+	}
+
 	p{
-		font-size: 1rem;
+		font-size: calc(var(--base-size)+0.2rem);
 	}
 
 	section{
-		margin-right: 20px;
-		margin-left: 20px;
+		margin: 20px 40px;
 	}
+
+	sec
 }
 
 @media (min-width: 700px) {
@@ -372,18 +378,21 @@ article{
 	}
 
 	p{
-		font-size: 1rem;
+		font-size: var(--base-size);
 	}
 
 	section{
-		margin-right: 30px;
-		margin-left: 30px;
+		margin: 30px 60px;
 	}
 
 	blockquote{
 		text-align: center;
 		font-size: 1.5rem;
 		padding: 50px;
+	}
+
+	aside p{
+		margin: 45px;
 	}
 }
 
@@ -410,7 +419,10 @@ article{
 	}
 
 	.nav-sub{
-		
+		padding: 20px 50px;
+	}
+
+	.nav-sub p{
 	}
 
 	.first-paragraph{
