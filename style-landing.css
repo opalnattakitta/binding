@@ -7,8 +7,11 @@ html{
 	scroll-behavior: smooth;
 }
 
+#footer p{
+	font-size: var(--footer-size);
+}
+
 #footer{
-	font-size: calc(var(--base-size) - 0.5rem);
 	text-align: center;
 	margin-bottom: 15px;
 }
@@ -131,7 +134,8 @@ html{
 }
 
 .first-paragraph{
-	font-size: 1.25rem;
+	font-size: var(--firstpara-size);
+	line-height: var(--firstpara-size);
 	padding: 20px 40px 30px 25px;
 }
 
@@ -497,5 +501,5 @@ main{
 }
 
 @media (min-width: 1280px) {
-	
+
 }

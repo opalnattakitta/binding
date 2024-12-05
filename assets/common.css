@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
-	--base-size: 1.2rem;
+/* fontsize */
+	--firstpara-size: 1.4rem;
+	--base-size: 1.3rem;
+	--footer-size: 1rem;
+
+
+
+Color
 	--yellow: #faff64;
 	--orange: #F1977C;
 	--pink: #ff7eb4;
@@ -16,5 +23,6 @@
 p {
 	font-size: var(--base-size);
 }
+
 
 /* * {margin-top: 0.5em;} */
