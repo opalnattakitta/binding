@@ -7,7 +7,7 @@ html{
 }
 
 #footer{
-	font-size: calc(var(--base-size) - 2px);
+	font-size: calc(var(--base-size)* 1.1rem);
 	text-align: center;
 	margin-top: 50px;
 	margin-bottom: 20px;
@@ -29,10 +29,17 @@ html{
 }
 
 .nav-sub{
-	color:red;
+	background-color: #faff64;
 	border: solid black 2px;
 	justify-content: center;
 	vertical-align: middle;
+	padding: 80px;
+}
+
+.nav-sub p{
+	background-color: #ff549b;
+	border: solid black 1px;
+	filter: drop-shadow(4px 4px rgb(53, 53, 53));
 }
 
 .back-top{
@@ -326,6 +333,12 @@ h1,h2,h3{
 
 article{
 	margin-bottom: 50px;
+}
+
+@media (max-width:700px) {
+	.nav-sub {
+		display: none;
+	}
 }
 
 @media (min-width: 500px) {
