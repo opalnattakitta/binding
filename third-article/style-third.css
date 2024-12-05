@@ -15,6 +15,19 @@ html{
 	background-color: #fff5f5;
 }
 
+#sub1{
+	scroll-behavior: smooth;
+}
+
+#sub2{
+	scroll-behavior: smooth;
+}
+
+#sub3{
+	scroll-behavior: smooth;
+}
+
+
 /* backtop button centered */
 .container-backtop{
 	display: flex;
@@ -34,15 +47,17 @@ html{
 	padding: 20px 20px;
 }
 
-.nav-sub p{
+.nav-button{
 	background-color: var(--orange);
 	border-radius: 10px;
 	border: solid black 1px;
 	filter: drop-shadow(4px 4px rgb(53, 53, 53));
-	margin-bottom: 30px;
-	margin-top: 30px;
 	text-align: center;
 	padding: 10px 5px;
+}
+
+.nav-sub a{
+	margin-bottom: 30px;
 }
 
 .back-top{
@@ -235,7 +250,7 @@ aside p{
 	font-size: 1.7rem;
 	font-style: italic;
 	color: var(--pink);
-	margin: auto;
+	margin: 35px;
 }
 
 section{
@@ -339,7 +354,7 @@ article{
 	margin-bottom: 50px;
 }
 
-@media (max-width:700px) {
+@media (max-width:900px) {
 	.nav-sub {
 		display: none;
 	}
@@ -448,5 +463,9 @@ article{
 		font-size: 1.7rem;
 		padding: 70px;
 		line-height: 2rem;
+	}
+
+	aside p{
+		margin: auto;
 	}
 }
