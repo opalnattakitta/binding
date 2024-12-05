@@ -1,6 +1,3 @@
-:root {
-	--base-size: 18px;
-}
 
 html{
 	scroll-behavior: smooth;
@@ -29,22 +26,28 @@ html{
 }
 
 .nav-sub{
-	background-color: #faff64;
+	background-color: var(--yellow);
 	border: solid black 2px;
+	border-bottom: none;
 	justify-content: center;
 	vertical-align: middle;
-	padding: 80px;
+	padding: 20px 20px;
 }
 
 .nav-sub p{
-	background-color: #ff549b;
+	background-color: var(--orange);
+	border-radius: 10px;
 	border: solid black 1px;
 	filter: drop-shadow(4px 4px rgb(53, 53, 53));
+	margin-bottom: 30px;
+	margin-top: 30px;
+	text-align: center;
+	padding: 10px 5px;
 }
 
 .back-top{
 	padding: 5px 10px 5px 10px;
-	background-color:#faff64;
+	background-color: var(--yellow);
 	border: solid 1px black;
 	border-radius: 10px;
 	filter: drop-shadow(4px 4px rgb(53, 53, 53));
@@ -168,7 +171,7 @@ html{
 }
 
 .author-block{
-	background-color: #ff7eb4;
+	background-color: var(--pink);
 	border: solid black 1px;
 	filter: drop-shadow(4px 4px rgb(53, 53, 53));
 	padding: 10px;
@@ -179,7 +182,7 @@ html{
 }
 
 hgroup{
-	background-color: #64ff76;
+	background-color: var(--green);
 }
 
 ul li:hover{
@@ -358,6 +361,11 @@ article{
 }
 
 @media (min-width: 700px) {
+
+	.first-paragraph{
+		font-size: 1.1rem;
+	}
+	
 	h1{
 		font-size: 4rem;
 		line-height: 1em;
@@ -365,10 +373,6 @@ article{
 
 	p{
 		font-size: 1rem;
-	}
-
-	.first-paragraph{
-		font-size: 1.1rem;
 	}
 
 	section{
@@ -403,6 +407,10 @@ article{
 
 	.nav-bar{
 		font-size: 1.3rem;
+	}
+
+	.nav-sub{
+		
 	}
 
 	.first-paragraph{
