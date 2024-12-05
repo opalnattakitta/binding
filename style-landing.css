@@ -93,6 +93,10 @@ html{
 	margin-top: 15px;
 }
 
+#container-logo1{
+	animation-delay: 4s;
+}
+
 .loop-text{
 	font-size: 1.2rem;
 	animation: loopText 5s infinite linear;

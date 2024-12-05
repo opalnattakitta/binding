@@ -39,6 +39,8 @@ html{
 }
 
 .nav-sub{
+	display: flex;
+	flex-direction:column;
 	background-color: var(--yellow);
 	border: solid black 2px;
 	border-bottom: none;
