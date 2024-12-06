@@ -402,6 +402,7 @@ main{
 		font-size: calc(var(--firstpara-size)*1.5);
 		line-height: calc(var(--firstpara-lh)*1.5);
 		padding: 30px 40px 40px 50px;
+	}	
 
 	#footer p{
 		font-size: calc(var(--footer-size) * 1.2);
