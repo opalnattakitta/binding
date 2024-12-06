@@ -310,10 +310,6 @@ main{
 		line-height: calc(var(--header-lh)* 1.5);
 	}
 
-	section{
-		margin: 0px 20px;
-	}
-
 	section p{
 		margin: 20px 20px;
 	}
