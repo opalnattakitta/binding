@@ -238,7 +238,7 @@ aside h3 {
 
 aside p{
 	margin-bottom: 20px;
-	line-height: 1.7rem;
+	line-height: var(--base-lh);
 	padding: 20px;
 }
  
@@ -382,31 +382,51 @@ main{
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1000px) {
 	
 	h1{
-		font-size: 6rem;
-		line-height: 1em;
-		padding-left: 30px;
+		padding-top: 40px;
+		font-size: calc(var(--header-size)* 2.7);
+		line-height: calc(var(--header-lh)* 2.5);
 	}
 
-	p{
-		font-size: 1.3rem;
+	h3{
+		font-size: calc(var(--base-size)* 1.3);
+	}
+
+	p {
+		font-size: calc(var(--base-size)* 1.2);
+	}
+	section p{
+		line-height: calc(var(--base-lh)* 1.4);
+	}
+
+	section{
+		padding: 40px;
+		margin: 20px 30px;
+		max-width: 800px;
 	}
 
 	ol{
-		font-size: 1.7rem;
+		font-size: calc(var(--base-size)* 1.5);
+	}
+
+	aside{
+		margin: 20px 20px;
+	}
+
+	aside p{
+		line-height: calc(var(--base-lh)*1.5);
 	}
 
 	.decoding-head{
-		font-size: 2rem;
-		padding: 40px;
+		font-size: calc(var(--base-size)*1.5);
+		padding: 30px;
 	}
 
 	.first-paragraph{
-		font-size: 2rem;
-		line-height: 1.5em;
-		padding: 50px;
+		font-size: calc(var(--firstpara-size)*1.3);
+		padding: 60px;
 	}
 
 	.author-block p{
@@ -414,29 +434,23 @@ main{
 		padding: 5px;
 	}
 
-	section{
-		margin-right: 50px;
-		margin-left: 50px;
-		max-width: 700px;
-	}
-
 	blockquote{
-		font-size: 1.5rem;
-		line-height: 2rem;
-		padding: 50px;
-		margin: none;
+		text-align: center;
+		font-size: calc(var(--blockq-size)*1.3);
+		line-height: calc(var(--blockq-lh)*1.5);
+		padding: 70px;
 	}
 
 	a{
-		font-size: calc(var(--link-size)*1.2);
-	}
-
-	.nav-bar a{
-		font-size: calc(var(--link-size)*1.2)
+		font-size: calc(var(--link-size)*1.25);
 	}
 
 	#footer p{
 		font-size: calc(var(--footer-size)*1.3);
 		line-height: calc(var(--footer-lh)*1.4);
+	}
+
+	.loop-text p{
+		font-size: calc(var(--base-size)* 7);
 	}
 }
