@@ -9,6 +9,7 @@
 	--footer-size: 1rem;
 	--link-size: 1.2rem;
 	--blockq-size: 1.3rem;
+	--aside-size: 1.5rem;
 
 
 /* line-height */
@@ -18,7 +19,11 @@
 	--header-lh: 2.6rem;
 	--footer-lh: 1.2rem;
 	--blockq-lh: 1.5rem;
+	--aside-lh: 1.7rem;
 
+/* padding */
+	--firstpara-pad: 20px 40px 30px 25px;
+	
 /* font	 */
 	--base-font: "League Spartan", sans-serif;
 	--head1-font: "Lexend", sans-serif;

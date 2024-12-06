@@ -21,6 +21,7 @@ html{
 
 
 .container-backtop{
+	margin-top: 50px;
 	display: flex;
 	justify-content: center;
 }
@@ -234,18 +235,16 @@ p{
 
 section p{
 	line-height: var(--base-lh);
-	margin-bottom: 20px;
-	max-width: 700px;
-	margin: 15px
+	margin: 20px 10px;
 }
 
-/* section{
+section{
 	margin: 15px;
-} */
+}
 
 aside p{
-	line-height: 1.9rem;
-	font-size: 1.7rem;
+	line-height: var(--aside-lh);
+	font-size: var(--aside-size);
 	font-style: italic;
 	color: var(--pink);
 	margin: 35px;
@@ -307,110 +306,127 @@ main{
 
 @media (min-width: 500px) {
 	h1{
-		font-size: 3.5rem;
-		line-height: 1em;
+		font-size: calc(var(--header-size)* 1.2);
+		line-height: calc(var(--header-lh)* 1.5);
+	}
+
+	section{
+		margin: 0px 20px;
 	}
 
 	section p{
-		font-size: calc(var(--base-size)+1rem);
+		margin: 20px 20px;
 	}
-
-	p{
-		font-size: calc(var(--base-size)+0.2rem);
-	}
-
-	section{
-		margin: 20px 40px;
-	}
-
-	sec
 }
 
 @media (min-width: 700px) {
-
-	.first-paragraph{
-		font-size: 1.1rem;
-	}
-	
 	h1{
-		font-size: 4rem;
-		line-height: 1em;
+		font-size: calc(var(--header-size)* 1.6);
+		line-height: calc(var(--header-lh)* 1.8);
 	}
 
-	p{
-		font-size: var(--base-size);
+	p {
+		font-size: calc(var(--base-size)* 1);
+	}
+
+	ol {
+		margin-bottom: 40px;
 	}
 
 	section{
-		margin: 30px 60px;
+		margin: 10px 50px 20px;
+	}
+
+	section p{
+		margin: 20px 30px;
+		line-height: calc(var(--base-lh)* 1.2);
+	}
+
+	aside p{
+		line-height: calc(var(--aside-lh)*1.4);
+		font-size: calc(var(--aside-size)*1.2);
+		margin: auto;
 	}
 
 	blockquote{
 		text-align: center;
-		font-size: 1.5rem;
-		padding: 50px;
+		font-size: calc(var(--blockq-size)*1.3);
+		padding: 70px;
 	}
 
 	aside p{
 		margin: 45px;
 	}
+
+	.first-paragraph{
+		font-size: calc(var(--firstpara-size)*1.1);
+		padding: 30px 50px 40px 30px;;
+	}
+
+	#footer p{
+		font-size: calc(var(--footer-size) * 1.2);
+	}
+	
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1000px) {
 
 	h1{
-		font-size: 5.5rem;
-		line-height: 1em;
-		padding-left: 30px;
+		font-size: calc(var(--header-size)* 2.2);
+		line-height: calc(var(--header-lh)* 2.5);
+		padding: 50px;
 	}
 
-	p{
-		font-size: 1.3rem;
-		line-height: 1.7rem;
+	p {
+		font-size: calc(var(--base-size)* 1.2);
+	}
+
+	section p{
+		max-width: 800px;
+		margin: auto; 
+		padding: 20px 0px;
+		line-height: calc(var(--base-lh)* 1.4);
 	}
 
 	ol{
-		font-size: 1.7rem;
-	}
-
-	.nav-bar{
-		font-size: 1.3rem;
+		font-size: calc(var(--sub-size)*1.3);
+		margin-bottom: 30px;
 	}
 
 	.nav-sub{
 		padding: 20px 50px;
 	}
 
-	.nav-sub p{
-	}
-
 	.first-paragraph{
-		font-size: 2rem;
-		line-height: 1.5em;
-		padding: 50px;
-	}
+		font-size: calc(var(--firstpara-size)*1.5);
+		line-height: calc(var(--firstpara-lh)*1.5);
+		padding: 30px 40px 40px 50px;
 
-	.author-block p{
-		font-size: 1.5rem;
+	#footer p{
+		font-size: calc(var(--footer-size) * 1.2);
 	}
 
 	section{
-		margin-right: 50px;
-		margin-left: 50px;
-	}
-
-	nav{
-		font-size: 1.4rem;
+		margin: 20px 50px;
 	}
 
 	blockquote{
-		font-size: 1.7rem;
-		padding: 70px;
-		line-height: 2rem;
+		font-size: calc(var(--blockq-size)*1.3);
+		padding: 50px;
+	}
+	aside p{
+		font-size: calc(var(--firstpara-size)*1.3);
+		margin: 30px 50px;
 	}
 
-	aside p{
-		margin: auto;
+	.nav-bar a{
+		font-size: calc(var(--link-size)*1.2);
 	}
+
+	#footer p{
+		font-size: calc(var(--footer-size)*1.3);
+		line-height: calc(var(--footer-lh)*1.4);
+	}
+
 }
