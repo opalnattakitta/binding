@@ -135,12 +135,12 @@ html{
 
 .first-paragraph{
 	font-size: var(--firstpara-size);
-	line-height: var(--firstpara-size);
+	line-height: var(--firstpara-lh);
 	padding: 20px 40px 30px 25px;
 }
 
 .author-block{
-	background-color: #ff7eb4;
+	background-color: var(--pink);
 	border: solid black 1px;
 	filter: drop-shadow(4px 4px rgb(53, 53, 53));
 	padding: 10px;
@@ -160,17 +160,18 @@ html{
 }
 
 .colophon-p{
-	line-height: 1.5rem;
+	line-height: var(--base-lh);
+	font-size: var(--base-size);
 	margin: 15px;
 }
 
 section p{
 	margin-bottom: 20px;
-	line-height: 1.5rem;
+	line-height: var(--base-lh);
 }
 
 hgroup{
-	background-color: #faff64;
+	background-color: var(--yellow);
 	border-bottom: solid 2px;
 }
 
@@ -197,16 +198,9 @@ ul li {
 blockquote {
 	padding: 50px;
 	font-weight: 400;
-	line-height: 1.2rem;
+	line-height: var(--base-lh);
 	background-color: black;
 	color: white;
-}
-
-p{
-	font-family: "League Spartan", sans-serif;
-	font-weight: 300;
-	line-height: var(--base-size);
-	/* font-size: var(--base-size); */
 }
 
 section{
@@ -292,11 +286,22 @@ section:nth-child(7){
 	color: white;
 }
 
+a{
+	font-size: var(--link-size);
+}
+
+
+p{
+	font-family: "League Spartan", sans-serif;
+	font-weight: 300;
+	font-size: var(--base-size);
+	line-height: var(--base-lh);
+}
+
 body {
 	font-family: "League Spartan", sans-serif;
 	background: linear-gradient(#ffffff, #fff5f5);
-	font-size: var(--base-size)
-}
+} 
 
 h2{
 	font-size: 1.5rem;
@@ -388,7 +393,7 @@ main{
 	}
 	
 	.colophon-p{
-		line-height: 1.5rem;
+		line-height: var(--base-lh);
 		margin-left: 30px;
 		margin-right: 30px;
 	}
