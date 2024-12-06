@@ -37,7 +37,6 @@ html{
 	display: flex;
 	white-space: nowrap;
 	width: 100%;
-	/* height: clamp(3em, 10vw, 6em); */
 	overflow: hidden;
 	margin-top: 15px;
 }
