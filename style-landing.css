@@ -8,8 +8,8 @@ html{
 }
 
 #footer p{
-	font-size: var(--footer-size);
-	line-height: var(--footer-lh);
+	/* font-size: var(--footer-size); */
+	/* line-height: var(--footer-lh); */
 }
 
 #footer{
@@ -106,7 +106,6 @@ html{
 }
 
 .loop-text{
-	font-size: 1.2rem;
 	animation: loopText 5s infinite linear;
 	margin-left: 25px;
 }
@@ -126,7 +125,6 @@ html{
 
 @keyframes marquee{
 	0% {left: 100%;}
-	/* 50%{left:-100%;} */
 	100%{left:-100%;}
 }
 
@@ -172,8 +170,8 @@ html{
 }
 
 .colophon-p{
-	line-height: var(--base-lh);
-	font-size: var(--base-size);
+	/* line-height: var(--base-lh); */
+	/* font-size: var(--base-size); */
 	margin: 15px;
 }
 
@@ -399,7 +397,7 @@ main{
 	}
 	
 	.colophon-p{
-		line-height: var(--base-lh);
+		/* line-height: var(--base-lh); */
 		margin: 20px 35px;
 	}
 }
@@ -408,108 +406,58 @@ main{
 @media (min-width: 1000px) {
 
 	h1{
-		font-size: 5.7rem;
-		line-height: 1em;
-		padding-left: 30px;
+		padding-top: 40px;
+		font-size: calc(var(--header-size)* 2.5);
+		line-height: calc(var(--header-lh)* 2.3);
 	}
 
-	p{
-		font-size: 1.1rem;
+	p {
+		font-size: calc(var(--base-size)* 1.2);
+		line-height: calc(var(--base-lh)* 1.3);
+		padding: 10px;
+	}
+
+	section p{
+		font-size: calc(var(--base-size)* 1.2);
+		line-height: calc(var(--base-lh)* 1.3);
+	}
+
+	.colophon-p p{
+		font-size: calc(var(--base-size)* 1.2);
+		line-height: calc(var(--base-lh)* 1.3);
 	}
 
 	.first-paragraph{
 		font-size: 1.5rem;
 		line-height: 1.5em;
-		padding: 30px;
+		max-width: 900px;
 	}
 
 	section{
-		margin-right: 50px;
-		margin-left: 50px;
+		padding: 30px;
+		margin: 20px 30px;
+		max-width: 800px;
 	}
 
-	nav{
-		font-size: 1.4rem;
-	}
 
 	blockquote{
-		font-size: 2rem;
+		text-align: center;
+		font-size: calc(var(--blockq-size)*1.3);
+		line-height: calc(var(--blockq-lh)*1.5);
 		padding: 70px;
-		margin: 50px;
-	}
-}
-
-@media (min-width: 1000px) {
-	p{
-		font-size: 1.3rem;
-		line-height: 1.7rem;
-	}
-	section{
-		max-width: 750px;
-		max-height: fit-content;
-		margin-left: 70px;
 	}
 
-	section p{
-		line-height: 1.7rem;
-	}
-
-	a {
-		font-size: 1.3rem;
-	}
-
-	aside{
-		margin-right: 70px;
-	}
-
-	.nav-bar{
-		font-size: 1.4rem;
-	}
-
-	.colophon-p{
-		margin-left: 70px;
-		margin-right: 70px;
-	}
-
-	h2{
-		margin-left: 70px;
-		margin-top: 30px;
-	}
-
-	h1{
-		padding-left: 50px;
-		padding-top: 50px;
+	a{
+		font-size: calc(var(--link-size)*1.25);
 	}
 
 	#footer p{
-		font-size: 1.1rem;
-		line-height: 1.3rem;
+		font-size: calc(var(--footer-size)*1.3);
+		line-height: calc(var(--footer-lh)*1.4);
 	}
 
-	.moving-bg-container{
-		padding: 10px;
+	.loop-text p{
+		font-size: calc(var(--base-size)* 7);
 	}
-
-	.first-paragraph{
-		font-size: 1.8rem;
-		padding-left: 50px;
-		padding-right: 50px;
-	}
-
-	.author-block{
-		margin-right: 60px;
-	}
-
-	.author-block a{
-		font-size: 1.5rem;
-	}
-
-	main{
-		padding: 0;
-	}
-
 }
-
-@media (min-width: 1280px) {
-
 }

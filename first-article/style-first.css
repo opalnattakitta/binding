@@ -172,7 +172,7 @@ hgroup{
 }
 
 header{
-	position: sticky;
+	/* position: sticky; */
 	top: 0px;
 	background-color: white;
 }
@@ -396,6 +396,7 @@ main{
 	p {
 		font-size: calc(var(--base-size)* 1.2);
 	}
+
 	section p{
 		line-height: calc(var(--base-lh)* 1.4);
 	}
