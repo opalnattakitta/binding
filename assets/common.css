@@ -2,15 +2,15 @@
 
 :root {
 /* fontsize */
-	--firstpara-size: 1.4rem;
-	--base-size: 1.25rem;
+	--firstpara-size: 1.5rem;
+	--base-size: 1.3rem;
 	--footer-size: 1rem;
-	--link-size: 1.1rem;
+	--link-size: 1.2rem;
 
 
 /* line-height */
 	--base-lh: 1.6rem;
-	--firstpara-lh: 1.6rem;
+	--firstpara-lh: 1.7rem;
 
 
 

@@ -9,6 +9,7 @@ html{
 
 #footer p{
 	font-size: var(--footer-size);
+	line-height: var(--footer-size);
 }
 
 #footer{
@@ -148,6 +149,12 @@ html{
 	margin-left: auto;
 	margin-right: 15px;
 	text-align: right;
+}
+
+.author-block a: hover{
+	transform: scale(105%);
+	transition-duration: 2s, 1s;
+	transition-timing-function: linear, ease-in-out;
 }
 
 .back-top{
