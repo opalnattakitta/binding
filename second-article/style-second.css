@@ -12,6 +12,35 @@ html{
 	margin: 30px 20px;
 }
 
+
+.container-sub{
+	display: flex;
+}
+
+.nav-sub{
+	display: flex;
+	flex-direction:column;
+	background-color: var(--yellow);
+	border: solid black 2px;
+	border-bottom: none;
+	justify-content: center;
+	vertical-align: middle;
+	padding: 20px 20px;
+}
+
+.nav-button{
+	background-color: var(--orange);
+	border-radius: 10px;
+	border: solid black 1px;
+	filter: drop-shadow(4px 4px rgb(53, 53, 53));
+	text-align: center;
+	padding: 10px 5px;
+}
+
+.nav-sub a{
+	margin-bottom: 30px;
+}
+
 .container-backtop{
 	display: flex;
 	justify-content: center;
@@ -37,7 +66,6 @@ html{
 }
 
 .loop-text{
-	font-size: var(--base-size);
 	font-family: var(--head2-font);
 	animation: loopText 10s infinite linear;
 	margin-left: 25px;
@@ -216,11 +244,23 @@ p{
 	line-height: var(--base-lh);
 }
 
-/* section p{
-	line-height: 1.6rem;
-	margin: 10px;
-	margin-bottom: 1.5rem;
-} */
+section p{
+	line-height: var(--base-lh);
+	margin: 20px 10px;
+}
+
+section{
+	margin: 15px;
+}
+
+aside p{
+	line-height: var(--aside-lh);
+	font-size: var(--aside-size);
+	font-style: italic;
+	color: var(--orange);
+	margin: 35px;
+}
+ 
 
 section{
 	margin: 15px;
@@ -232,17 +272,18 @@ ul{
 	justify-content: space-between;
 	padding
 }
-/* 
+
 ol{
 	display: flex;
 	justify-content: space-between;
-	font-size: 1.5rem;
-	margin-bottom: 1.5rem;
+	font-size: calc(var(--sub-size)*0.8);
 	border: solid 1px black;
 	border-radius: 10px;
 	filter: drop-shadow(4px 4px rgb(53, 53, 53));
 	padding: 10px;
-} */
+	max-width: 900px;
+	margin: auto;
+}
 
 ol:nth-child(1){
 	background-color:#d7c6ff;
@@ -256,8 +297,7 @@ ol:nth-child(3){
 
 body {
 	font-family: "League Spartan", sans-serif;
-	/* background: linear-gradient(#ffd3a4, #ffffff); */
-	font-size: var(--base-size)
+	font-size: var(--base-size);
 }
 
 
@@ -275,14 +315,20 @@ main{
 	padding: var(--base-size);
 }
 
+@media (max-width:900px) {
+	.nav-sub {
+		display: none;
+	}
+}
+
 @media (min-width: 500px) {
 	h1{
 		font-size: calc(var(--header-size)* 1.2);
 		line-height: calc(var(--header-lh)* 1.5);
 	}
 
-	section{
-		margin: 0px 20px;
+	section p{
+		margin: 20px 20px;
 	}
 }
 
@@ -294,23 +340,33 @@ main{
 
 	p {
 		font-size: calc(var(--base-size)* 1.1);
-		line-height: calc(var(--base-lh)* 1.3);
+	}
+
+	ol {
+		margin-bottom: 40px;
 	}
 
 	section{
-		margin: 30px 60px;
+		margin: 10px 50px 20px;
 	}
 
 	section p{
 		margin: 20px 30px;
+		line-height: calc(var(--base-lh)* 1.2);
 	}
 
 
 	blockquote{
 		text-align: center;	
 		max-width: 600px;
-		margin-left: 35px;
 	}
+
+	aside p{
+		line-height: calc(var(--aside-lh)*1.4);
+		font-size: calc(var(--aside-size)*1.2);
+		margin: auto;
+	}
+
 
 	.loop-text p{
 		font-size: var(--base-size);
@@ -321,24 +377,35 @@ main{
 @media (min-width: 1000px) {
 	
 	h1{
-		font-size: calc(var(--header-size)* 1.6);
-		line-height: calc(var(--header-lh)* 1.8);
+		font-size: calc(var(--header-size)* 2.2);
+		line-height: calc(var(--header-lh)* 2.5);
 	}
 
 	p {
 		font-size: calc(var(--base-size)* 1.2);
-		line-height: calc(var(--base-lh)* 1.5);
+	}
+
+	section p{
+		max-width: 800px;
+		margin: auto; 
+		padding: 20px 0px;
+		line-height: calc(var(--base-lh)* 1.4);
 	}
 
 	ol{
-		font-size: 1.7rem;
+		font-size: calc(var(--sub-size)*1.3);
+		margin-bottom: 30px;
+	}
+
+	.nav-sub{
+		padding: 20px 50px;
 	}
 
 	.first-paragraph{
-		font-size: 1.5rem;
-		line-height: 1.3em;
-		padding: 30px;
-	}
+		font-size: calc(var(--firstpara-size)*1.5);
+		line-height: calc(var(--firstpara-lh)*1.5);
+		padding: 30px 40px 40px 50px;
+	}	
 	
 	section{
 		margin-right: 100px;
@@ -346,8 +413,10 @@ main{
 		padding: 30px;
 	}
 
-	section p{
+	section{
+		margin: 20px 50px;
 	}
+
 
 	nav{
 		font-size: 1.4rem;
@@ -358,16 +427,22 @@ main{
 		line-height: 2rem;
 	}
 
-	a{
-		font-size: calc(var(--link-size)*1.2);
+	aside p{
+		font-size: calc(var(--firstpara-size)*1.5);
+		font-weight: 400;
+		text-align: center;
 	}
 
-	.nav-bar a{
-		font-size: calc(var(--link-size)*1.2)
+	a{
+		font-size: calc(var(--link-size)*1.25);
 	}
 
 	#footer p{
 		font-size: calc(var(--footer-size)*1.3);
 		line-height: calc(var(--footer-lh)*1.4);
+	}
+
+	.loop-text p{
+		font-size: calc(var(--base-size)* 7);
 	}
 }
