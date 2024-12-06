@@ -32,7 +32,8 @@ html{
 }
 
 .loop-text{
-	font-size: 1.2rem;
+	font-size: var(--base-size);
+	font-family: var(--head2-font);
 	animation: loopText 10s infinite linear;
 	margin-left: 25px;
 }
@@ -159,16 +160,45 @@ ul li {
 	padding: 2px 10px;
 }
 
-
-
 blockquote {
+	border: solid black 2px;
+	margin: 20px;
+	background-color: white;
+	filter: drop-shadow(4px 4px rgb(53, 53, 53));
+}
+
+blockquote p{
+	font-family: var(--head2-font);
+	padding: 10px;
+}
+
+.container-wd{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.button-wd :hover{
+	background-color: black;
+	color:white;
+}
+
+#black-wd{
+	background-color: black;
+	color: white;
+	text-align: right;
+	padding-right: 5px;
+}
+
+
+/* blockquote {
 	padding: 33px;
 	font-weight: 300;
 	line-height: 1.3rem;
 	background-color: black;
 	color: white;
 	text-align: center;
-}
+} */
 
 a{
 	font-size: var(--link-size);
