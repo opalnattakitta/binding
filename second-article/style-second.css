@@ -19,17 +19,17 @@ html{
 
 .nav-sub{
 	display: flex;
-	flex-direction:column;
-	background-color: var(--yellow);
+	flex-direction: row;
+	background-color: black;
 	border: solid black 2px;
-	border-bottom: none;
 	justify-content: center;
 	vertical-align: middle;
-	padding: 20px 20px;
+	padding: 30px 30px;
+	column-gap: 30px;
 }
 
 .nav-button{
-	background-color: var(--orange);
+	background-color: white;
 	border-radius: 10px;
 	border: solid black 1px;
 	filter: drop-shadow(4px 4px rgb(53, 53, 53));
@@ -37,9 +37,9 @@ html{
 	padding: 10px 5px;
 }
 
-.nav-sub a{
+/* .nav-sub a{
 	margin-bottom: 30px;
-}
+} */
 
 .container-backtop{
 	display: flex;
@@ -249,10 +249,6 @@ section p{
 	margin: 20px 10px;
 }
 
-section{
-	margin: 15px;
-}
-
 aside p{
 	line-height: var(--aside-lh);
 	font-size: var(--aside-size);
@@ -270,13 +266,12 @@ ul{
 	display:flex;
 	height: 20px;
 	justify-content: space-between;
-	padding
 }
 
 ol{
 	display: flex;
 	justify-content: space-between;
-	font-size: calc(var(--sub-size)*0.8);
+	font-size: calc(var(--sub-size) * 0.8);
 	border: solid 1px black;
 	border-radius: 10px;
 	filter: drop-shadow(4px 4px rgb(53, 53, 53));
@@ -284,6 +279,7 @@ ol{
 	max-width: 900px;
 	margin: auto;
 }
+
 
 ol:nth-child(1){
 	background-color:#d7c6ff;
@@ -407,12 +403,6 @@ main{
 		padding: 30px 40px 40px 50px;
 	}	
 	
-	section{
-		margin-right: 100px;
-		margin-left: 100px;
-		padding: 30px;
-	}
-
 	section{
 		margin: 20px 50px;
 	}
