@@ -222,6 +222,10 @@ section p{
 	margin-bottom: 1.5rem;
 }
 
+section{
+	margin: 15px;
+}
+
 ul{
 	display:flex;
 	height: 20px;
@@ -251,49 +255,11 @@ ol:nth-child(3){
 	background-color:#bdffc4;
 }
 
-section{
-	margin: 25px;
-}
-
-/* 
-section:nth-child(2) { 
-	top: 30px;
-	background-color:#d7c6ff;
-}
-
-section:nth-child(3) { 
-	top: 90px;
-	background-color:#aec8ff;
-}
-
-section:nth-child(4) { 
-	top: 120px;
-	background-color:#bdffc4;
-}
-
-section:nth-child(5) { 
-	top: 120px;
-	background-color:#ffbdff;
-} */
-
-/* header{
-	background-color: #faff64;
-	border: solid 1px black;
-	border-radius: 10px;
-	filter: drop-shadow(4px 4px rgb(53, 53, 53));
-	padding: 20px;
-	padding-bottom: 50px;
-} */
-
 body {
 	font-family: "League Spartan", sans-serif;
 	/* background: linear-gradient(#ffd3a4, #ffffff); */
 	font-size: var(--base-size)
 }
-
-/* h2{
-	font-size: 30px;
-} */
 
 
 h1{
@@ -306,9 +272,9 @@ h1,h2,h3,ol{
 	font-family: var(--head2-font);
 }
 
-/* main{
+main{
 	padding: var(--base-size);
-} */
+}
 
 @media (min-width: 500px) {
 	h1{
