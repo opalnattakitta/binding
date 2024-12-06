@@ -1,7 +1,3 @@
-:root {
-	--base-size: 18px;
-}
-
 html{
 	scroll-behavior: smooth;
 }
@@ -54,9 +50,7 @@ html{
 	display: flex;
 	justify-content: center;
 	border-bottom: solid 2px black;
-	padding-bottom: 15px;
-	padding-top: 20px;
-	font-size: 20px;
+	padding: 20px 15px;
 }
 
 .title-change:nth-child(1){animation-delay: 0.03s;}
@@ -128,18 +122,14 @@ html{
 }
 
 .nav-bar{
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	font-size: 16px;
+	padding: 0px 10px;
+	margin: 10px 0px;
 }
 
 .first-paragraph{
-	font-size: 1.3rem;
-	padding: 20px;
-	padding-top: 30px;
-	padding-bottom: 50px;
+	font-size: var(--firstpara-size);
+	line-height: var(--firstpara-lh);
+	padding: 20px 40px 30px 25px;
 }
 
 .author-block{
@@ -149,12 +139,12 @@ html{
 	padding: 10px;
 	max-width: fit-content;
 	margin-left: auto;
-	margin-right: 15px;
+	margin-right: 10px;
 	text-align: right;
 }
 
 hgroup{
-	background-color: #F1B47D;
+	background-color: var(--orange);
 }
 
 ul li:nth-child(1){
@@ -180,37 +170,21 @@ blockquote {
 	text-align: center;
 }
 
-p{
-	font-family: "League Spartan", sans-serif;
-	font-weight: 300;
-	line-height: 20px;
-	color: black;
+a{
+	font-size: var(--link-size);
 }
 
-/* section{
-	position: sticky;
-	top:70px;
-	border: solid 1px black;
-	border-radius: 10px;
-	filter: drop-shadow(4px 4px rgb(53, 53, 53));
-	padding: 25px;
-	padding-bottom: 50px;
-	margin-bottom: 30px;
-	margin-top: 10px;
-	max-width: fit-content;
-} */
+p{
+	font-weight: 300;
+	font-size: var(--base-size);
+	font-family: var(--base-font);
+	line-height: var(--base-lh);
+}
 
 section p{
 	line-height: 1.6rem;
 	margin: 10px;
 	margin-bottom: 1.5rem;
-}
- 
-ul{
-	display:flex;
-	height: 20px;
-	justify-content: space-between;
-	padding
 }
 
 ul{
@@ -282,22 +256,19 @@ body {
 	font-size: var(--base-size)
 }
 
-h2{
+/* h2{
 	font-size: 30px;
-}
+} */
 
-h1:nth-child(3){
-
-}
 
 h1{
-	font-size: 2.4rem;
+	font-size: var(--header-size);
 	border-top: solid 2px black;
-	padding: 20px;
+	padding: var(--base-size);
 }
 
 h1,h2,h3,ol{
-	font-family: "Pixelify Sans", sans-serif;
+	font-family: var(--head2-font);
 }
 
 /* main{

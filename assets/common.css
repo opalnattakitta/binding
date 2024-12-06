@@ -21,11 +21,14 @@
 
 /* font	 */
 	--base-font: "League Spartan", sans-serif;
+	--head1-font: "Lexend", sans-serif;
+	--head2-font: "Pixelify Sans", sans-serif;
+	--head3-font: "ZCOOL QingKe HuangYou", serif;
 
 
 /* Color */
 	--yellow: #faff64;
-	--orange: #F1977C;
+	--orange: #F1B47D;
 	--pink: #ff7eb4;
 	--green: #64ff76;
 	--purple: #d7c6ff;
@@ -49,7 +52,7 @@
 	font-style: italic;
 }
 
-.purple{
+.purple {
 	color: var(--purple);
 }
 

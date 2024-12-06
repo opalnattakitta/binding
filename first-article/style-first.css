@@ -43,7 +43,8 @@ html{
 }
 
 .loop-text{
-	font-size: 1.2rem;
+	font-size: var(--base-size);
+	font-family: var();
 	animation: loopText 5s infinite linear;
 	margin-left: 25px;
 }
@@ -303,9 +304,9 @@ h2{
 }
 
 h1{
-	font-family: "Lexend", sans-serif;
-	font-size: calc(var(--header-size)*1.1);
-	line-height: calc(var(--header-size)*1.4);
+	font-family: var(--head1-font);
+	font-size: var(--header-size);
+	line-height: calc(var(--header-lh)*1.3);
 	padding: var(--base-size);
 	border-top: solid 2px black;
 }
