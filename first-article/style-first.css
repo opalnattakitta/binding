@@ -1,17 +1,15 @@
-:root {
-	--base-size: 1.2rem;
-}
-
-
 html{
 	scroll-behavior: smooth;
 }
 
+#footer p{
+	font-size: var(--footer-size);
+	line-height: var(--footer-lh);
+}
+
 #footer{
-	font-size: 0.9rem;
 	text-align: center;
-	margin-top: 30px;
-	margin-bottom: 20px;
+	margin: 30px 20px;
 }
 
 #jumptop{
@@ -27,7 +25,7 @@ html{
 
 .back-top{
 	padding: 5px 10px 5px 10px;
-	background-color:#faff64;
+	background-color: var(--yellow);
 	border: solid 1px black;
 	border-radius: 10px;
 	filter: drop-shadow(4px 4px rgb(53, 53, 53));
@@ -63,9 +61,7 @@ html{
 	display: flex;
 	justify-content: center;
 	border-bottom: solid 2px black;
-	padding-bottom: 15px;
-	padding-top: 20px;
-	font-size: 20px;
+	padding: 20px 15px;
 }
 
 .title-change:nth-child(1){animation-delay: 0.03s;}
@@ -109,7 +105,7 @@ html{
 	}
 }
 
-.moving-bg-container{
+/* .moving-bg-container{
 	height:35px;
 	width:100%;
 	overflow:hidden;
@@ -131,33 +127,29 @@ html{
 	left: 100%;
 	display:flex;
 	justify-content:space-between;
-	/* height:40px; */
+	height:40px;
 	font-family: 'Courier New', Courier, monospace;
 }
 
 @keyframes marquee{
 	0% {left: 100%;}
-	/* 50%{left:-100%;} */
 	100%{left:-100%;}
-}
+} */
 
 .nav-bar{
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	font-size: 16px;
+	padding: 0px 10px;
+	margin: 10px 0px;
 }
 
 
 .first-paragraph{
-	font-size: 1.25rem;
-	padding: 20px;
-	padding-right: 40px;
+	font-size: var(--firstpara-size);
+	line-height: var(--firstpara-lh);
+	padding: 20px 40px 30px 25px;
 }
 
 .author-block{
-	background-color: #faff64;
+	background-color: var(--yellow);
 	border: solid black 1px;
 	filter: drop-shadow(4px 4px rgb(53, 53, 53));
 	padding: 10px;
@@ -169,21 +161,18 @@ html{
 
 section p{
 	margin-bottom: 20px;
-	line-height: 1.5rem;
+	line-height: var(--base-lh);
 }
 
 hgroup{
-	background-color: #7CD6F1;  #faff64
+	background-color: var(--blue); 
 }
 
-/* 
-.nav-bar a:hover{
-	border: solid black 1px;
-	border-radius: 10px;
-	padding: 2px 10px;
-	background-color: black;
-	color:white;
-} */
+header{
+	position: sticky;
+	top: 0px;
+	background-color: white;
+}
 
 ul li:hover{
 	border: solid black 1px;
@@ -202,34 +191,26 @@ ul li:nth-child(1){
 ul li {
 	border: solid rgb(255, 255, 255) 1px;
 	border-radius: 10px;
-	padding: 2px 10px;
+	/* padding: 2px 10px; */
 }
 
 blockquote {
-	padding: 50px;
+	font-size: var(--blockq-size);
+	line-height: var(--blockq-lh);
 	font-weight: 400;
-	line-height: 1.2rem;
+	font-style: italic;
 	background-color: black;
 	color: white;
-}
-
-p{
-	font-family: "League Spartan", sans-serif;
-	font-weight: 300;
-	line-height: 20px;
-	color: black;
+	padding: 40px 30px;
 }
 
 section{
-	/* position: sticky; */
-	top:70px;
 	border: solid 1px black;
 	border-radius: 10px;
 	filter: drop-shadow(4px 4px rgb(53, 53, 53));
 	padding: 25px;
 	padding-bottom: 50px;
 	margin-bottom: 30px;
-	margin-top: 10px;
 	max-width: 600px;
 
 }
@@ -270,8 +251,9 @@ ul{
 ol{
 	display: flex;
 	justify-content: space-between;
-	font-size: 1.5rem;
-	margin-bottom: 20;
+	font-size: var(--sub-size);
+	line-height: var(--sub-lh);
+	margin-bottom: 1.5rem;
 	text-align: right;
 }
 
@@ -300,32 +282,41 @@ section:nth-child(5) {
 	padding-bottom: 50px;
 } */
 
+a{
+	font-size: var(--link-size);
+}
+
+p{
+	font-weight: 300;
+	font-size: var(--base-size);
+	font-family: var(--base-font);
+	line-height: var(--base-lh);
+}
+
 body {
 	font-family: "League Spartan", sans-serif;
 	background: linear-gradient(#ffffff, #fff5f5);
-	font-size: var(--base-size)
 }
 
 h2{
 	font-size: 30px;
 }
 
-h1:nth-child(3){
-
-}
-
 h1{
-	font-size: 2.5rem;
+	font-family: "Lexend", sans-serif;
+	font-size: calc(var(--header-size)*1.1);
+	line-height: calc(var(--header-size)*1.4);
+	padding: var(--base-size);
 	border-top: solid 2px black;
-	padding: 20px;
 }
 
-h1,h2,h3{
-	font-family: "Lexend", sans-serif;
-}
+/* h1,h2,h3{
+	font-family: "Poppins", serif;
+} */
 
 main{
 	padding: var(--base-size);
+
 }
 
 @media (max-width: 700px) {
@@ -423,7 +414,7 @@ main{
 
 	.author-block p{
 		font-size: 1.6rem;
-		padding: 10px;
+		padding: 5px;
 	}
 
 	section{

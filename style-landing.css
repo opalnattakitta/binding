@@ -9,7 +9,7 @@ html{
 
 #footer p{
 	font-size: var(--footer-size);
-	line-height: var(--footer-size);
+	line-height: var(--footer-lh);
 }
 
 #footer{
@@ -239,7 +239,6 @@ ul{
 	display:flex;
 	height: 20px;
 	justify-content: space-between;
-	padding
 }
 
 ol{
@@ -253,7 +252,7 @@ ol{
 
 section:nth-child(1){ 
 	top: 30px;
-	background-color:#d7c6ff;
+	background-color: var(--lightpurple);
 }
 
 section:nth-child(3){ 
@@ -304,8 +303,8 @@ a{
 
 
 p{
-	font-family: "League Spartan", sans-serif;
 	font-weight: 300;
+	font-family: var(--base-font);
 	font-size: var(--base-size);
 	line-height: var(--base-lh);
 }
@@ -332,6 +331,7 @@ h3{
 
 h1{
 	font-size: var(--header-size);
+	line-height: var(--header-lh);
 	border-top: solid 2px black;
 	padding: 20px;
 }

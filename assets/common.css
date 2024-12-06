@@ -8,13 +8,19 @@
 	--base-size: 1.25rem;
 	--footer-size: 1rem;
 	--link-size: 1.2rem;
+	--blockq-size: 1.3rem;
 
 
 /* line-height */
 	--base-lh: 1.6rem;
 	--firstpara-lh: 1.7rem;
 	--sub-lh: 1.9rem;
+	--header-lh: 2.6rem;
+	--footer-lh: 1.2rem;
+	--blockq-lh: 1.5rem;
 
+/* font	 */
+	--base-font: "League Spartan", sans-serif;
 
 
 /* Color */
@@ -23,15 +29,13 @@
 	--pink: #ff7eb4;
 	--green: #64ff76;
 	--purple: #d7c6ff;
+	--blue: #7CD6F1;
 
 /* pastelcolor	 */
 	--lightgreen: #bdffc4;
 	--lightpurple: #d7c6ff;
 	--lightblue: #aec8ff;
 
-/* highlight*/
-	--highlight: text
-}
 
 .underline{
 	text-decoration: black underline;
