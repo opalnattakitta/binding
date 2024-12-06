@@ -172,7 +172,6 @@ hgroup{
 }
 
 header{
-	/* position: sticky; */
 	top: 0px;
 	background-color: white;
 }
@@ -385,6 +384,7 @@ main{
 	
 	h1{
 		padding-top: 40px;
+		padding-left: 40px;
 		font-size: calc(var(--header-size)* 2.7);
 		line-height: calc(var(--header-lh)* 2.5);
 	}
@@ -430,7 +430,6 @@ main{
 	}
 
 	.author-block p{
-		font-size: 1.6rem;
 		padding: 5px;
 	}
 

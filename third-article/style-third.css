@@ -400,6 +400,15 @@ main{
 		padding: 30px 40px 40px 50px;
 	}	
 
+	.decoding-head{
+		font-size: calc(var(--base-size)*1.5);
+		padding: 30px;
+	}
+
+	.author-block p{
+		padding: 5px;
+	}
+
 	section{
 		margin: 20px 50px;
 	}
